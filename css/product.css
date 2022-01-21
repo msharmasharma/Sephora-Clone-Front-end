@@ -1,0 +1,126 @@
+#starT{
+    margin-left: 2%;
+    font-size: 15px;
+}
+#starT span:hover{
+    cursor: pointer;
+
+}
+#pinku{
+    color: #FF3399;
+}
+#lest{
+    display: inline-block;
+    width:65%;
+    /* border: 1px solid red; */
+    vertical-align: top;
+   height: 600px;
+}
+#rigst{
+    display: inline-block;
+    width: 34%;
+    /* border: 1px solid red; */
+    vertical-align: top;
+    height: 1100px;
+}
+#choori{
+  display: flex;
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#aImgLe{
+display: inline-block;
+/* border: 1px solid red; */
+width: 20%;
+vertical-align: top;
+}
+#aImgRi{
+  display: inline-block;
+  /* border: 1px solid red; */
+width: 78%;
+height: 600px;
+vertical-align: top;
+background-size: cover;
+}
+#aImgUp{
+  /* border: 1px solid black; */
+  height: 150px;
+  width: 100%;
+background-size: cover;
+}
+#aImgDo{
+  /* border: 1px solid black; */
+  height: 150px;
+  width: 100%;
+background-size: cover;
+}
+
+
+#chakku{
+
+width: 20px;
+height: 20px;
+margin-right: 5px;
+}
+#naam{
+  font-weight: bold;
+}
+#kemat{
+  font-weight: bold;
+}
+#freeIt{
+
+ width: 80%;
+
+}
+#freeLe{
+  display: inline-block;
+  width: 25%;
+ 
+  vertical-align: top;
+font-weight: bold;
+font-size: 15px;
+}
+#freeRe{
+  display: inline-block;
+ 
+  width: 70%;
+  vertical-align: top;
+  height: 100px;
+  font-size: 12px;
+  font-weight: bold;
+  color: gray;
+
+}
+#otherE{
+color: #FF3399;
+}
+#otherE:hover{
+cursor: pointer;
+}
+#ML{
+  border: 2px solid black;
+  padding: 10px;
+    width: 50px;        
+}
+#impOr{
+  border: 2px solid #F28216;
+  width: 80%;
+  height: 100px;
+  padding: 10px;
+}
+#addBag{
+width: 80%;
+
+background-color: #FF3399;
+color: white;
+text-align: center;
+font-weight: bold;
+padding: 15px;
+}
+
+#addBag:hover{
+  cursor: pointer;
+}

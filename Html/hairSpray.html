@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/home.css" />
+  <link rel="stylesheet" href="/css/hairSpray.css" />
+  <link rel="icon" href="https://static.nnnow.com/client/assets/images/nnnow-logo-200.png">
+  <title>Buy Hair Sprays and Styling Products Online in India</title>
+</head>
+
+<body>
+  <div id="main"></div>
+
+  <div>
+    <span class="curs" style="margin-left: 2%"><a href="home.html">SEPHORA </a>/</span>
+    <span class="curs"> Haircare /</span>
+    <span class="curs" style="color: #ec008c">
+      Hair Sprays and Styling Products</span>
+  </div>
+  <br />
+  <div id="out_Div">
+    <div class="in_Div" id="leff">
+      <div class="leffHe">CATEGORY</div>
+      <br />
+      <div>
+        <span><input type="checkbox" /></span>
+        <span class="chsi">Hair Styling Products (26)</span>
+      </div>
+      <br />
+
+      <div>
+        <span><input type="checkbox" /></span>
+        <span class="chsi">Hair Styling Products (2)</span>
+      </div>
+      <hr />
+
+      <br />
+      <div>
+        <span><input type="checkbox" /></span>
+        <span class="chsi">New Arrivals(15)</span>
+      </div>
+
+      <br />
+
+      <div>
+        <span><input type="checkbox" /></span>
+        <span class="chsi">On Sale(24)</span>
+      </div>
+
+      <hr />
+      <br />
+      <div class="leffHe">FILTER BY</div>
+
+      <div id="divInpi">
+        <div>Brand</div>
+        <div>➺</div>
+      </div>
+      <div id="bran_Sort">
+        <div>
+          <span><input type="checkbox" /></span>
+          <span>MOROCCANOIL(15)</span><br />
+        </div>
+
+        <div>
+          <span><input type="checkbox" /></span>
+          <span>Dyson(5)</span><br />
+        </div>
+
+        <div>
+          <span><input type="checkbox" /></span>
+          <span>Aveda(4)</span><br />
+        </div>
+
+        <div>
+          <span><input type="checkbox" /></span>
+          <span>Kama Ayurveda(3)</span><br />
+        </div>
+
+        <div>
+          <span><input type="checkbox" /></span>
+          <span>BRIOGEO(1)</span><br />
+        </div>
+      </div>
+
+      <br />
+
+      <div id="sizeInpi">
+        <div>Size</div>
+        <div>➺</div>
+      </div>
+      <div id="size_Sort">
+        <div>
+          <span><input type="checkbox" /></span>
+          <span>100 ML(2)</span><br />
+        </div>
+
+        <div>
+          <span><input type="checkbox" /></span>
+          <span>100 Gm(2)</span><br />
+        </div>
+
+        <div>
+          <span><input type="checkbox" /></span>
+          <span>125 ML(1)</span><br />
+        </div>
+
+        <div>
+          <span><input type="checkbox" /></span>
+          <span>147 ML(1)</span><br />
+        </div>
+
+        <div>
+          <span><input type="checkbox" /></span>
+          <span>150 ML(1)</span><br />
+        </div>
+      </div>
+
+      <br />
+
+      <div id="colorInpi">
+        <div>Color</div>
+        <div>➺</div>
+      </div>
+      <div id="color_Sort">
+        <div>
+          <span><input type="checkbox" /></span>
+          <span>No Colour(26)</span><br />
+        </div>
+
+        <div>
+          <span><input type="checkbox" /></span>
+          <span>Blue(1)</span><br />
+        </div>
+
+        <div>
+          <span><input type="checkbox" /></span>
+          <span> Green(1)</span>
+          <br />
+        </div>
+      </div>
+      <br />
+
+      <div id="priceInpi">
+        <div>Price</div>
+        <div>➺</div>
+      </div>
+      <div id="price_Sort">
+        <div>
+          <span><input type="checkbox" /></span>
+          <span>Below Rs.1499(6)</span><br />
+        </div>
+
+        <div>
+          <span><input type="checkbox" /></span>
+          <span>Rs.1500 - Rs.1999(2)</span><br />
+        </div>
+
+        <div>
+          <span><input type="checkbox" /></span>
+          <span> Rs.2000 - Rs.2499(10)</span>
+          <br />
+        </div>
+
+        <div>
+          <span><input type="checkbox" /></span>
+          <span> Above Rs.2500(11)</span>
+          <br />
+        </div>
+      </div>
+    </div>
+
+    <div class="in_Div" id="reff">
+      <div id="flEnd">
+        <span class="bol">SORT:ㅤ </span><span><select id="opti" onchange="sorybyprice()">
+            <option value="pop">Popularity</option>
+            <option value="Low">Price:Low To High</option>
+            <option value="High">Price:High To Low</option>
+            <option value="">Discount</option>
+          </select></span>
+      </div>
+      <br />
+      <div id="Items_Div"></div>
+      <br />
+    </div>
+  </div>
+  </div>
+
+  <br>
+
+  <div id="lowrr"></div>
+</body>
+
+</html>
+
+<script>
+
+
+
+  var data = [
+    {
+      img1: "https://cdn19.nnnow.com/web-images/medium/styles/SNX3WCF7MD8/1634886962080/1.jpg",
+      img2: "https://cdn11.nnnow.com/web-images/medium/styles/SNX3WCF7MD8/1634886962074/2.jpg",
+      title: "MOROCCANOIL",
+      price: 2160,
+      des1: "Luminous Hairspray Extra Strong",
+      des2: "Get a Moroccanoil Intense Hydrating Mask 30ml free on purchase of Rs. 4000 & Above",
+    },
+    {
+      img1: "https://cdn19.nnnow.com/web-images/medium/styles/X1XO2C0IMAC/1634886167233/1.jpg",
+      img2: "https://cdn13.nnnow.com/web-images/medium/styles/X1XO2C0IMAC/1634886167223/2.jpg",
+      title: "MOROCCANOIL",
+      price: 2700,
+      des1: "Mending Infusion",
+      des2: "Get a Moroccanoil Intense Hydrating Mask 30ml free on purchase of Rs. 4000 & Above",
+    },
+    {
+      img1: "https://cdn03.nnnow.com/web-images/medium/styles/5WTNETORKC9/1634886109156/1.jpg",
+      img2: "https://cdn11.nnnow.com/web-images/medium/styles/5WTNETORKC9/1634886109146/2.jpg",
+      title: "MOROCCANOIL",
+      price: 2700,
+      des1: "Perfect Defence",
+      des2: "Get a Moroccanoil Intense Hydrating Mask 30ml free on purchase of Rs. 4000 & Above",
+    },
+    {
+      img1: "https://cdn06.nnnow.com/web-images/medium/styles/H18EA2SCEQD/1634887143536/1.jpg",
+      img2: "https://cdn19.nnnow.com/web-images/medium/styles/H18EA2SCEQD/1634887143527/2.jpg",
+      title: "MOROCCANOIL",
+      price: 2160,
+      des1: "Luminous Haispray Medium",
+      des2: "Get a Moroccanoil Intense Hydrating Mask 30ml free on purchase of Rs. 4000 & Above",
+    },
+    {
+      img1: "https://cdn09.nnnow.com/web-images/medium/styles/W51E0I7CNW1/1634886962106/1.jpg",
+      img2: "https://cdn18.nnnow.com/web-images/medium/styles/W51E0I7CNW1/1634886962100/2.jpg",
+      title: "MOROCCANOIL",
+      price: 2160,
+      des1: "Luminous Haispray Strong",
+      des2: "Get a Moroccanoil Intense Hydrating Mask 30ml free on purchase of Rs. 4000 & Above",
+    },
+    {
+      img1: "https://cdn09.nnnow.com/web-images/medium/styles/VF7GS6611AY/1634886962122/1.jpg",
+      img2: "https://cdn01.nnnow.com/web-images/medium/styles/VF7GS6611AY/1634886962116/2.jpg",
+      title: "MOROCCANOIL",
+      price: 2340,
+      des1: "Thickening Lotion",
+      des2: "Get a Moroccanoil Intense Hydrating Mask 30ml free on purchase of Rs. 4000 & Above",
+    },
+    {
+      img1: "https://cdn12.nnnow.com/web-images/medium/styles/DP7Z06V2RBK/1634887776627/1.jpg",
+      img2: "https://cdn08.nnnow.com/web-images/medium/styles/DP7Z06V2RBK/1634887776604/2.jpg",
+      title: "MOROCCANOIL",
+      price: 2700,
+      des1: "Smoothing Lotion",
+      des2: "Get a Moroccanoil Intense Hydrating Mask 30ml free on purchase of Rs. 4000 & Above",
+    },
+    {
+      img1: "https://cdn17.nnnow.com/web-images/medium/styles/PSY9GYLUMYU/1634887017760/1.jpg",
+      img2: "https://cdn03.nnnow.com/web-images/medium/styles/PSY9GYLUMYU/1634887017743/2.jpg",
+      title: "MOROCCANOIL",
+      price: 23400,
+      des1: "Texture Clay Hair Cream",
+      des2: "Get a Moroccanoil Intense Hydrating Mask 30ml free on purchase of Rs. 4000 & Above",
+    },
+    {
+      img1: "https://cdn16.nnnow.com/web-images/medium/styles/S8NFW3EY286/1634887017787/1.jpg",
+      img2: "https://cdn18.nnnow.com/web-images/medium/styles/S8NFW3EY286/1634887017773/2.jpg",
+      title: "MOROCCANOIL",
+      price: 2700,
+      des1: "Intense Curl Hair Cream",
+      des2: "Get a Moroccanoil Intense Hydrating Mask 30ml free on purchase of Rs. 4000 & Above",
+    },
+    {
+      img1: "https://cdn07.nnnow.com/web-images/medium/styles/EIXAGQU3TK7/1634887143513/1.jpg",
+      img2: "https://cdn07.nnnow.com/web-images/medium/styles/EIXAGQU3TK7/1634887143501/2.jpg",
+      title: "MOROCCANOIL",
+      price: 1890,
+      des1: "Curl Control Hair Mousse",
+      des2: "Get a Moroccanoil Intense Hydrating Mask 30ml free on purchase of Rs. 4000 & Above",
+    },
+    {
+      img1: "https://cdn02.nnnow.com/web-images/medium/styles/VJJNDGIRV6T/1634886962094/1.jpg",
+      img2: "https://cdn11.nnnow.com/web-images/medium/styles/VJJNDGIRV6T/1634886962087/2.jpg",
+      title: "MOROCCANOIL",
+      price: 2160,
+      des1: "Root Boost Hair Spray",
+      des2: "Get a Moroccanoil Intense Hydrating Mask 30ml free on purchase of Rs. 4000 & Above",
+    },
+    {
+      img1: "https://cdn14.nnnow.com/web-images/medium/styles/IW03DU6F507/1634887143685/1.jpg",
+      img2: "https://cdn00.nnnow.com/web-images/medium/styles/IW03DU6F507/1634887143671/2.jpg",
+      title: "MOROCCANOIL",
+      price: 2700,
+      des1: "Curl Defining Hair Cream",
+      des2: "Get a Moroccanoil Intense Hydrating Mask 30ml free on purchase of Rs. 4000 & Above",
+    },
+    {
+      img1: "https://cdn04.nnnow.com/web-images/medium/styles/YTOI4SS4PY6/1634886167248/1.jpg",
+      img2: "https://cdn06.nnnow.com/web-images/medium/styles/YTOI4SS4PY6/1634886167241/2.jpg",
+      title: "MOROCCANOIL",
+      price: 2160,
+      des1: "Volumizing Hair Mousee",
+      des2: "Get a Moroccanoil Intense Hydrating Mask 30ml free on purchase of Rs. 4000 & Above",
+    },
+    {
+      img1: "https://cdn07.nnnow.com/web-images/medium/styles/4Y2H758XO93/1634886109115/1.jpg",
+      img2: "https://cdn07.nnnow.com/web-images/medium/styles/4Y2H758XO93/1634886109105/2.jpg",
+      title: "MOROCCANOIL",
+      price: 2160,
+      des1: "Molding Hair Cream",
+      des2: "Get a Moroccanoil Intense Hydrating Mask 30ml free on purchase of Rs. 4000 & Above",
+    },
+    {
+      img1: "https://cdn09.nnnow.com/web-images/medium/styles/A6CPZPO5HOS/1634887756893/1.jpg",
+      img2: "https://cdn08.nnnow.com/web-images/medium/styles/A6CPZPO5HOS/1634887756880/2.jpg",
+      title: "MOROCCANOIL",
+      price: 2700,
+      des1: "Hydrating Styling Hair Cream",
+      des2: "Get a Moroccanoil Intense Hydrating Mask 30ml free on purchase of Rs. 4000 & Above",
+    },
+    {
+      img1: "https://cdn17.nnnow.com/web-images/medium/styles/IRLN8G62YUT/1604639524432/1.jpg",
+      img2: "https://cdn14.nnnow.com/web-images/medium/styles/IRLN8G62YUT/1604639524429/2.jpg",
+      title: "DYSON",
+      price: 4490,
+      des1: "Supersonic™ Stand - Nickel/Black",
+      des2: "",
+    },
+    {
+      img1: "https://cdn02.nnnow.com/web-images/medium/styles/PJ0LV3ZEDBW/1596195251654/1.jpg",
+      img2: "https://cdn15.nnnow.com/web-images/medium/styles/PJ0LV3ZEDBW/1596195251650/2.jpg",
+      title: "DYSON",
+      price: 42900,
+      des1: "AirWrap™ Hair Styler Complete - Fuchsia",
+      des2: "",
+    },
+    {
+      img1: "https://cdn05.nnnow.com/web-images/medium/styles/JJT23UG9WY2/1597293125979/1.jpg",
+      img2: "https://cdn10.nnnow.com/web-images/medium/styles/JJT23UG9WY2/1597293125977/2.jpg",
+      title: "DYSON",
+      price: 36900,
+      des1: "Corrale™ Straightener - Black Nickel / Fuchsia",
+      des2: "",
+    },
+    {
+      img1: "https://cdn19.nnnow.com/web-images/medium/styles/A19YXAB0JOC/1601266012654/1.jpg",
+      img2: "https://cdn02.nnnow.com/web-images/medium/styles/A19YXAB0JOC/1601266012652/2.jpg",
+      title: "DYSON",
+      price: 28900,
+      des1: "Supersonic™ Hair Dryer - Fuchsia",
+      des2: "",
+    },
+    {
+      img1: "https://cdn03.nnnow.com/web-images/medium/styles/V4X0FI116NQ/1595917116563/1.jpg",
+      img2: "https://cdn17.nnnow.com/web-images/medium/styles/V4X0FI116NQ/1595917116562/2.jpg",
+      title: "DYSON",
+      price: 42900,
+      des1: "AirWrap™ Hair Styler Complete - Red",
+      des2: "",
+    },
+    {
+      img1: "https://cdn08.nnnow.com/web-images/medium/styles/ZXDKDH6NBRG/1586865417850/1.jpg",
+      img2: "https://cdn13.nnnow.com/web-images/medium/styles/ZXDKDH6NBRG/1593084196277/2.jpg",
+      title: "AVEDA",
+      price: 750,
+      des1: "Volumizing Tonic",
+      des2: "",
+    },
+    {
+      img1: "https://cdn03.nnnow.com/web-images/medium/styles/RA54LTCGGYE/1586865417841/1.jpg",
+      img2: "https://cdn18.nnnow.com/web-images/medium/styles/RA54LTCGGYE/1593084196282/2.jpg",
+      title: "AVEDA",
+      price: 750,
+      des1: "Be Curly™ Curl Enhancer",
+      des2: "2 more offers",
+    },
+    {
+      img1: "https://cdn10.nnnow.com/web-images/medium/styles/J58AWSX9AZI/1586865417826/1.jpg",
+      img2: "https://cdn10.nnnow.com/web-images/medium/styles/J58AWSX9AZI/1586865417826/1.jpg",
+      title: "AVEDA",
+      price: 2360,
+      des1: "Control Force™ Firm Hold Hair Spray",
+      des2: "2 more offers",
+    },
+    {
+      img1: "https://cdn17.nnnow.com/web-images/medium/styles/5TDGTK0NV92/1586865417794/1.jpg",
+      img2: "https://cdn14.nnnow.com/web-images/medium/styles/5TDGTK0NV92/1593084196298/2.jpg",
+      title: "AVEDA",
+      price: 1950,
+      des1: "Texture Tonic",
+      des2: "2 more offers",
+    },
+    {
+      img1: "https://cdn07.nnnow.com/web-images/medium/styles/0GM7ARTPJBU/1583131511649/1.jpg",
+      img2: "https://cdn07.nnnow.com/web-images/medium/styles/0GM7ARTPJBU/1583131511649/1.jpg",
+      title: "BRIOGEO",
+      price: 2200,
+      des1: "Blossom & Bloom™ Ginseng + Biotin Volumizing Blow Dry Spray",
+      des2: "3 more offers",
+    },
+    {
+      img1: "https://cdn10.nnnow.com/web-images/medium/styles/TOK5FD2SO0J/1614232065007/1.jpg",
+      img2: "https://cdn19.nnnow.com/web-images/medium/styles/TOK5FD2SO0J/1614232065001/2.jpg",
+      title: "KAMA AYURVEDA",
+      price: 775,
+      des1: "Organic Indigo Powder",
+      des2: "",
+    },
+    {
+      img1: "https://cdn01.nnnow.com/web-images/medium/styles/W2GT30F99QG/1614232064988/1.jpg",
+      img2: "https://cdn08.nnnow.com/web-images/medium/styles/W2GT30F99QG/1614232064984/2.jpg",
+      title: "KAMA AYURVEDA",
+      price: 1445,
+      des1: "Organic Hair Colour Kit",
+      des2: "",
+    },
+    {
+      img1: "https://cdn12.nnnow.com/web-images/medium/styles/5LCRJTPX7AG/1614231559437/1.jpg",
+      img2: "https://cdn03.nnnow.com/web-images/medium/styles/5LCRJTPX7AG/1614231559435/2.jpg",
+      title: "KAMA AYURVEDA",
+      price: 775,
+      des1: "Organic Henna Powder",
+      des2: "",
+    },
+  ];
+
+
+  // document.getElementById("opti").addEventListener("change",sorybyprice);
+
+  function sorybyprice() {
+    console.log("hi")
+    var select = document.getElementById("opti").value;
+
+    if (select == "Low") {
+      var data2 = [...data];
+      data2 = data2.sort(function (a, b) {
+        console.log(data2)
+        return a.price - b.price;
+      });
+      showData(data2);
+    }
+    if (select == "High") {
+      var data2 = [...data];
+      data2 = data2.sort(function (a, b) {
+        console.log(data2)
+        return b.price - a.price;
+
+      });
+      showData(data2);
+    }
+    if (select == "pop") {
+      // console.log(data2)
+     showData(data);
+    }
+
+
+    // showData(data);
+  }
+
+  showData(data);
+  function showData(data) {
+    document.getElementById("Items_Div").innerHTML = null;
+
+
+    data.forEach((el) => {
+      var span1 = document.createElement("span");
+      var span2 = document.createElement("span");
+
+      var spImg = document.createElement("img");
+      spImg.src = `https://cdn02.nnnow.com/web-images/master/product_tags/cb6e9f96-922e-42cb-84ae-9337178f87fa/1554297283453/Sale.png`;
+
+      span1.append(spImg);
+      span2.innerText = " OFFERS";
+      span1.setAttribute("class", "span1");
+
+      var offerss = document.createElement("div");
+      offerss.setAttribute("class", "offing");
+      offerss.append(span1, span2);
+
+      var title = document.createElement("div");
+      title.innerText = el.title;
+      title.setAttribute("class", "titles");
+
+      var price = document.createElement("div");
+      price.innerText = `Rs.${el.price}`;
+      price.setAttribute("class", "prices");
+
+      var image = document.createElement("img");
+      image.src = `${el.img1}`;
+
+      var des1 = document.createElement("div");
+      des1.innerText = `${el.des1}`;
+      des1.setAttribute("class", "des1");
+
+      var des2 = document.createElement("div");
+      des2.innerText = `${el.des2}`;
+      des2.setAttribute("class", "des2");
+
+      var box = document.createElement("div");
+      box.setAttribute("class", "box");
+
+      box.append(image, offerss, title, des1, price, des2);
+      document.getElementById("Items_Div").append(box);
+
+      var fl = false;
+      image.addEventListener("mouseenter",()=>{
+
+        image.src = `${el.img2}`;
+        image.addEventListener("mouseleave",()=>{
+          image.src = `${el.img1}`;
+
+        })
+
+      })
+
+
+
+      box.addEventListener("click", () => {
+
+        localStorage.setItem("detail", JSON.stringify(el));
+        window.location.href = "productIn.html";
+
+      })
+
+
+
+
+    });
+
+  }
+
+
+
+
+</script>
+
+
+
+<script type="module">
+  var details;
+
+
+
+
+  import navbar from "/components/navbar.js";
+
+  import navImpl from "/JS/nav.js";
+  import lower from "/JS/lower.js";
+
+  document.getElementById("main").innerHTML = navbar();
+  navImpl();
+
+
+
+
+
+
+
+  var flage = false;
+  document.getElementById("divInpi").addEventListener("click", () => {
+    if (flage == false) {
+      flage = true;
+    } else {
+      flage = false;
+    }
+
+    if (flage == true) {
+      document.getElementById("divInpi").style.color = "white";
+      document.getElementById("divInpi").style.backgroundColor = "black";
+
+      document.getElementById("bran_Sort").style.display = "block";
+    } else {
+      document.getElementById("bran_Sort").style.display = "none";
+
+      document.getElementById("divInpi").style.color = "black";
+      document.getElementById("divInpi").style.backgroundColor = "white";
+    }
+  });
+
+  document.getElementById("sizeInpi").addEventListener("click", () => {
+    if (flage == false) {
+      flage = true;
+    } else {
+      flage = false;
+    }
+
+    if (flage == true) {
+      document.getElementById("sizeInpi").style.color = "white";
+      document.getElementById("sizeInpi").style.backgroundColor = "black";
+
+      document.getElementById("size_Sort").style.display = "block";
+    } else {
+      document.getElementById("size_Sort").style.display = "none";
+
+      document.getElementById("sizeInpi").style.color = "black";
+      document.getElementById("sizeInpi").style.backgroundColor = "white";
+    }
+  });
+
+  document.getElementById("colorInpi").addEventListener("click", () => {
+    if (flage == false) {
+      flage = true;
+    } else {
+      flage = false;
+    }
+
+    if (flage == true) {
+      document.getElementById("colorInpi").style.color = "white";
+      document.getElementById("colorInpi").style.backgroundColor = "black";
+
+      document.getElementById("color_Sort").style.display = "block";
+    } else {
+      document.getElementById("colorInpi").style.color = "black";
+      document.getElementById("colorInpi").style.backgroundColor = "white";
+
+      document.getElementById("color_Sort").style.display = "none";
+    }
+  });
+
+  document.getElementById("priceInpi").addEventListener("click", () => {
+    if (flage == false) {
+      flage = true;
+    } else {
+      flage = false;
+    }
+
+    if (flage == true) {
+      document.getElementById("priceInpi").style.color = "white";
+      document.getElementById("priceInpi").style.backgroundColor = "black";
+
+      document.getElementById("price_Sort").style.display = "block";
+    } else {
+      document.getElementById("priceInpi").style.color = "black";
+      document.getElementById("priceInpi").style.backgroundColor = "white";
+
+      document.getElementById("price_Sort").style.display = "none";
+    }
+  });
+
+  document.getElementById("lowrr").innerHTML = lower();
+
+
+
+</script>
