@@ -121,6 +121,10 @@ body {
   width: 30%;
 }
 
+#google{
+  margin-top: 25px;
+}
+
 .star {
   background-image: url(home.png);
 }
@@ -139,6 +143,12 @@ body {
   vertical-align: top;
 }
 
+#handleBox{
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
 .sep {
   width: 210px;
   height: 45px;
@@ -147,6 +157,11 @@ body {
 .sep11 {
   height: 30px;
   width: 30px;
+ 
+}
+
+#marr{
+   margin-left: -80px;
 }
 
 #log {
@@ -174,6 +189,7 @@ body {
 #sec div:hover {
   cursor: pointer;
 }
+
 
 #list div {
   margin-left: 6%;
@@ -719,15 +735,31 @@ body {
   flex-direction: column;
 }
 .contP{
+  margin: auto;
   background-color: #FF3399;
   text-align: center;
   color: white;
   font-weight: bold;
   width: 70%;
-  height: 30px;
+  height: 25px;
   border: none;
+  
 
 }
+.contPP{
+
+  margin: auto;
+  /* background-color: #FF3399; */
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  width: 70%;
+  height: 10px;
+  border: none;
+
+
+}
+
 .contP:hover{
   cursor: pointer;
 }

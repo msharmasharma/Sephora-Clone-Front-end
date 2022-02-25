@@ -318,9 +318,14 @@ function navbar(){
       <input type="text" id="search" placeholder="🔍 Seach SEPHORA" />
     </div>
     <div class="sep1" id="seph" style="margin-right: 22%">S E P H O R A</div>
-    <div class="sep11"><img src="/images/5.png" alt="" /></div>
+    <div class="sep11" id = "marr"><img src="/images/5.png" alt="" /></div>
     <div class="sep11"><a href = "/Html/bag.html"><img src="/images/6.png" /></a></div>
     <div id="log"><img src="/images/7.png" /></div>
+
+    <div id = "handleBox"></div>  
+
+    
+   
   </div>
 
   <br /><br />
@@ -583,7 +588,7 @@ function navbar(){
   <div id = "cros">✖</div>
 
     <h1 style="text-align: center;">LOGIN</h1>
-    <div class = "upText" >Enter your Username</div>
+    <div class = "upText" >Enter your Email</div>
 
     <div class="logInP">
     <input type="text" id = "yrUserName" >
@@ -601,13 +606,26 @@ function navbar(){
 <div class="logInP">
 <button class = "contP" id = "cntnuu">CONTINUE</button>
 </div>
-<br><br><br>
+<br>
 
-  <div style="text-align: center;">Or</div>
+  
 
 <div class="logInP">
 <button class="contP" id = "regii" >Register</button> 
 </div>
+
+<br><br>
+
+<div class = "contPP">Or</div>
+
+<div class="logInP">
+<button class="contP" id = "google" >Google</button> 
+</div>
+
+
+
+
+
 </div>
 
     <div id = "regIn">

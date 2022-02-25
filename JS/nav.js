@@ -293,97 +293,114 @@ function navImpl(){
   })
   
   
-  document.getElementById("rekister").addEventListener("click",(event) =>{ 
-  event.preventDefault();
   
-  var data = {
-  
-    name:document.getElementById("namer").value,
-    email:document.getElementById("mailer").value,
-    password:document.getElementById("passer").value,
-    mobile:document.getElementById("phoner").value,
-    username:document.getElementById("namer").value,
-    description:"So Gya Ye Jha",
-  
-  }
-  
-  data = JSON.stringify(data);
-  
-        var login_api = `https://masai-api-mocker.herokuapp.com/auth/register`
-        fetch(login_api,{
-  
-            method:"POST",
-            body:data,
-            headers:{
-                "Content-Type":"application/json",
-            },
-  
-  
-  
-        })
-        .then(function(res){
-  
-            res.json().then(function(res){
-                console.log(res);
-                if(res.error == false){
-                  alert("Registered Succesfully");
-                  document.getElementById("regIn").style.display = "none";
-                  document.getElementById("logIn").style.display = "block";
-                }else{
-                  alert("User Already Exist")
-                }
-  
-            })
-            
-  
-  
-        })
-  
-  
-  
+
+
+  document.getElementById("rekister").addEventListener("click", ()=>{
+    signup();
   })
   
-  
-  document.getElementById("cntnuu").addEventListener("click",(event) =>{
-  event.preventDefault();
-  var data = {
-  
-        username:document.getElementById("yrUserName").value,
-        password:document.getElementById("yrPassword").value,
-  
+  async function signup() {
+  try {
+    var data = {
+      name: document.getElementById("namer").value,
+      phone: document.getElementById("phoner").value,
+      email: document.getElementById("mailer").value,
+      password: document.getElementById("passer").value,
+      username: document.getElementById("namer").value,
+      description: "So Gya Ye Jha",
+    };
+
+    data = JSON.stringify(data);
+    let url = `http://localhost:2354/register`
+    console.log(data);
+    let response = await fetch(url, {
+      method: "POST",
+      body: data,
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    let result = await response.json();
+    console.log(result);
+    if(result.status=="Done"){
+      alert("Registered Succesfully");
+      document.getElementById("regIn").style.display = "none";
+      document.getElementById("logIn").style.display = "block";
+  }else if(result.status == "HalfDone"){ 
+          alert(result.errors);
+        }
+
+  else{
+      alert("Already Registered");
   }
-  data = JSON.stringify(data);
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+
+
+
+
+  var userName = JSON.parse(localStorage.getItem("userName"));
+  if(userName === null){ 
+
+  }else{ 
+    document.getElementById("handleBox").innerText = `Hi, ${userName}`;
+
+  }
+  console.log(userName);
+
+
+
+
+
+
+
+
+
   
-  fetch(`https://masai-api-mocker.herokuapp.com/auth/login`,{
-  
-          method:"POST",
-          body:data,
-          headers:{
-              "Content-Type":"application/json",
-          },
-  
-  
-          })
-          .then(function(res){
-  
-          res.json()
-          .then(function(res){
-              console.log(res);
-              if(res.error == false){ 
-                alert("Login Succesful")
-                document.getElementById("logIn").style.display = "none";
-              }else{
-                alert("Wrong Credentials")
-              }
-  
-              
-  
-          })
-  
-          })
-  
-  
-  })
+  document.getElementById("cntnuu").addEventListener("click", (event) => {
+    event.preventDefault();
+    var data = {
+      email: document.getElementById("yrUserName").value,
+      password: document.getElementById("yrPassword").value,
+    };
+    data = JSON.stringify(data);
+
+    fetch(`http://localhost:2354/login`, {
+      method: "POST",
+      body: data,
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }).then(function (res) {
+      res.json().then(function (res) {
+        console.log(res);
+        if (res.status == "Done") {
+          alert(`Login Succesful ${res.user.name}`);
+          document.getElementById("logIn").style.display = "none";
+          
+          var userName = localStorage.setItem("userName",JSON.stringify(res.user.name));
+          document.getElementById("handleBox").innerText = `Hi, ${res.user.name}`;
+
+
+          var userToken = localStorage.setItem("userToken",JSON.stringify(res.token))  
+        }
+        
+        else {
+          alert("Wrong Credentials");
+        }
+      });
+    });
+
+
+    
+  });
+
+
 
 
 }

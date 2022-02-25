@@ -440,7 +440,34 @@ if(document.getElementById("prInp").value == "masai30"){
 
 document.getElementById("check_out").addEventListener("click",()=>{
 
-  window.location.href = "checkout1.html";
+  var userToken = JSON.parse(localStorage.getItem("userToken"));
+  
+  fetch(`http://localhost:2354/hairSpray/auth`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${userToken}`,
+      },
+    }).then(function (res) {
+      res.json().then(function (res) {
+        console.log(res);
+        if (res.status !== "fine") {
+          alert(`Please Login to proceed further`);
+        }
+        
+        else {
+          var data = JSON.parse(localStorage.getItem("data"));
+          if(data.length !== 0){ 
+            window.location.href = "checkout1.html";
+          } else{
+            
+          }
+          // alert("Wrong Credentials");
+        }
+      });
+    });
+
+
 
 })
 

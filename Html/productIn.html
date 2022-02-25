@@ -108,6 +108,12 @@
     import lower from '/JS/lower.js';
 
 
+
+
+    
+
+
+
     document.getElementById("main").innerHTML = navbar();
     navImpl();
 
@@ -125,9 +131,23 @@
     document.getElementById("niBack").innerHTML = lower();
 
 
+
+
+    var userName = JSON.parse(localStorage.getItem("userName"));
+  if(userName === null){ 
+
+  }else{ 
+    document.getElementById("handleBox").innerText = `Hi, ${userName}`;
+
+  }
+
+
 </script>
 
 <script>
+
+
+
     var arr = JSON.parse(localStorage.getItem("data")) || [];
 
     var count = 0;
@@ -145,8 +165,11 @@
         }else{
             alert("Item Already Added");
         }
-
-
-
     })
+
+
+    
+
+    
+  
 </script>
