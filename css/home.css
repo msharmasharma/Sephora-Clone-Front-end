@@ -36,7 +36,11 @@ a{
 }
 
 
-
+#log2{
+  height: 15px;
+ display:none;
+ margin-right: 10px;
+}
 
 
 

@@ -745,61 +745,7 @@
   </div>
 
   
-<!-- 
-  <div id="logIn">
-    <div id="cros">✖</div>
 
-    <h1 style="text-align: center">LOGIN</h1>
-    <div class="upText">Enter your Username</div>
-
-    <div class="logInP">
-      <input type="text" id="yrUserName" />
-    </div>
-
-    <br />
-    <div class="upText">Enter your Password</div>
-
-    <div class="logInP">
-      <input type="password" id="yrPassword" />
-    </div>
-
-    <div class="upText"></div>
-    <br /><br /><br />
-    <div class="logInP">
-      <button class="contP" id="cntnuu">CONTINUE</button>
-    </div>
-    <br /><br /><br />
-
-    <div style="text-align: center">Or</div>
-
-    <div class="logInP">
-      <button class="contP" id="regii">Register</button>
-    </div>
-  </div>
-
-  <div id="regIn">
-    <div id="ciross">✖</div>
-    <div id="regInDiv">
-      <br />
-      <div class="grText">Name</div>
-      <input type="text" id="namer" />
-      <br /><br />
-      <div class="grText">Phone</div>
-      <input type="number" id="phoner" />
-      <br /><br />
-      <div class="grText">Email</div>
-      <input type="email" id="mailer" />
-      <br /><br />
-      <div class="grText">Password</div>
-      <input type="password" id="passer" />
-      <br /><br />
-      <button class="selfR" id="rekister">REGISTER</button>
-      <br /><br />
-      <hr />
-      <br />
-      <button class="selfR" id="logee">LOGIN</button>
-    </div>
-  </div> -->
 
 
 
@@ -1118,7 +1064,7 @@
 
 
   document.getElementById("google").addEventListener("click", ()=>{
-      window.location.href = "http://localhost:2354/auth/google"
+      window.location.href = "https://sephora-website-clone.herokuapp.com/hairSpray/auth/google"
   })
 
 
@@ -1140,7 +1086,7 @@
     };
 
     data = JSON.stringify(data);
-    let url = `http://localhost:2354/register`
+    let url = `https://sephorabackend.herokuapp.com/register`
     console.log(data);
     let response = await fetch(url, {
       method: "POST",
@@ -1176,6 +1122,10 @@
   if(userName === null){ 
 
   }else{ 
+
+    document.getElementById("log").style.display = "none";
+    document.getElementById("log2").innerText = `LogOut`;
+    
     document.getElementById("handleBox").innerText = `Hi, ${userName}`;
 
   }
@@ -1184,6 +1134,16 @@
 
 
 
+
+
+  document.getElementById("log2").addEventListener("click",()=>{
+    alert("Logout Succesfully")
+    localStorage.clear();
+    window.location.href = "home.html";
+    // document.getElementById("log2").innerText = "";
+    // document.getElementById("log").style.display = "block";
+
+  })
 
 
 
@@ -1198,7 +1158,7 @@
     };
     data = JSON.stringify(data);
 
-    fetch(`http://localhost:2354/login`, {
+    fetch(`https://sephorabackend.herokuapp.com/login`, {
       method: "POST",
       body: data,
       headers: {
@@ -1210,16 +1170,40 @@
         if (res.status == "Done") {
           alert(`Login Succesful ${res.user.name}`);
           document.getElementById("logIn").style.display = "none";
-          
+         
           var userName = localStorage.setItem("userName",JSON.stringify(res.user.name));
           document.getElementById("handleBox").innerText = `Hi, ${res.user.name}`;
 
+          var userToken = localStorage.setItem("userToken",JSON.stringify(res.token));
 
-          var userToken = localStorage.setItem("userToken",JSON.stringify(res.token))  
+          clearKarega();
+         
+
+
+          function clearKarega(){
+  var userName = JSON.parse(localStorage.getItem("userName"));
+  if(userName === null){ 
+
+  }else{ 
+    console.log("hisasda")
+    document.getElementById("log").style.display = "none";
+    document.getElementById("log2").innerText = `LogOut`;
+
+    document.getElementById("handleBox").innerText = `Hi, ${userName}`;
+
+  }
+  console.log(userName);
+
+
+}
+
+
+
         }
         
         else {
           alert("Wrong Credentials");
+
         }
       });
     });
@@ -1228,6 +1212,9 @@
     
   });
 
+
+
+ 
 
 </script>
 
