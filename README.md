@@ -37,8 +37,8 @@ Sephora Collection, Sephora offers beauty products including cosmetics, skincare
   • Heroku</br><hr>
   
 
-<b><i>Functionalities</i></b>
-Authentication</br>
+<b><i>Functionalities</i></b></br>
+  • Authentication</br>
   •	Signup using backend.</br>
   •	Login using backend.</br>
   •	Logout using backend.</br>
@@ -49,7 +49,7 @@ Authentication</br>
   •	Price Updation on increasing and decreasing products quantity.</br>
   •	30% discount on applying coupon code.</br><hr>
   
-<b><i>Sorting</i></b>
+<b><i>Sorting</i></b></br>
   •	Based on Price using backend.</br>
   •	Based on Brands name using backend.</br>
   •	Based on popularity using backend.</br><hr>
