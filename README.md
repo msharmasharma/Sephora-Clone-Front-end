@@ -5,48 +5,50 @@ SEPHORA-CLONE
 Sephora is a French multinational retailer of personal care and beauty products. Featuring nearly 3,000 brands, along with its own private label, 
 Sephora Collection, Sephora offers beauty products including cosmetics, skincare, body, fragrance, nail colour, beauty tools, body lotions and haircare.
 
-Authors
-  •	Madhusudan Sharma
-  •	Aashish Kumar
-  •	Shashikant Patil
-  •	Shivanshu Mishra
-  •	Gourav Mishra
+Authors</br>
+  •	Madhusudan Sharma</br>
+  •	Aashish Kumar</br>
+  •	Shashikant Patil</br>
+  •	Shivanshu Mishra</br>
+  •	Gourav Mishra</br>
 
 How to look up
   Go to this link :-
   https://github.com/Shaivaan/Sephora-Unit-4
 
 
-Technologies Used for FRONT-END
-  •	HTML
-  •	Javascript
-  •	CSS
+Technologies Used for FRONT-END</br>
+  •	HTML</br>
+  •	Javascript</br>
+  •	CSS</br>
   
-Technologies Used for BACK-END
-  •	MongoDB
-  •	NodeJS
-  •	ExpressJS
+Technologies Used for BACK-END</br>
+  •	MongoDB</br>
+  •	NodeJS</br>
+  •	ExpressJS</br>
   
-Tools
-  VS Code , Github , Heroku
+Tools</br>
+  • VS Code</br>
+  • Github</br>
+  • Heroku</br>
 
 Functionalities
 
-Authentication
-  •	Signup using backend.
-  •	Login using backend.
-  •	Logout using backend.
-  •	Google Authentication.
+Authentication</br>
+  •	Signup using backend.</br>
+  •	Login using backend.</br>
+  •	Logout using backend.</br>
+  •	Google Authentication.</br>
   
-Carting
-  •	Item Addition and Deletion.
-  •	Price Updation on increasing and decreasing products quantity.
-  •	30% discount on applying coupon code.
+Carting</br>
+  •	Item Addition and Deletion.</br>
+  •	Price Updation on increasing and decreasing products quantity.</br>
+  •	30% discount on applying coupon code.</br>
   
 Sorting
-  •	Based on Price using backend.
-  •	Based on Brands name using backend.
-  •	Based on popularity using backend.
+  •	Based on Price using backend.</br>
+  •	Based on Brands name using backend.</br>
+  •	Based on popularity using backend.</br>
   
 Website flow
   *Visit Landing page 
