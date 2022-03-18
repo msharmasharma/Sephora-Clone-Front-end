@@ -1,7 +1,7 @@
 SEPHORA-CLONE
 
-
-
+Sephora is a French multinational retailer of personal care and beauty products. Featuring nearly 3,000 brands, along with its own private label, 
+Sephora Collection, Sephora offers beauty products including cosmetics, skincare, body, fragrance, nail colour, beauty tools, body lotions and haircare.
 
 
 ## Landing Page :
