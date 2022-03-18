@@ -37,11 +37,11 @@ The registration process for new users will be completed here, and we have done 
 
 
 <b><i>Authors</i></b></br>
-  •	Madhusudan Sharma</br>
-  •	Aashish Kumar</br>
-  •	Shashikant Patil</br>
-  •	Shivanshu Mishra</br>
-  •	Gourav Mishra</br><hr/>
+  •	[Madhusudan Sharma](https://github.com/msharmasharma)</br>
+  •	[Aashish Kumar](https://github.com/AASHISHKUMAR321)</br>
+  •	[Shashikant Patil](https://github.com/shashi530)</br>
+  •	[Shivanshu Mishra](https://github.com/Shaivaan)</br>
+  •	[Gourav Mishra](https://github.com/Gourav1221)</br><hr/>
 
 <b><i>How to look up</i></b></br>
   Go to this link :-
