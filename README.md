@@ -14,7 +14,7 @@ Sephora Collection, Sephora offers beauty products including cosmetics, skincare
 
 <b><i>How to look up</i></b></br>
   Go to this link :-
-  https://github.com/Shaivaan/Sephora-Unit-4
+  https://clever-banach-bb22fa.netlify.app/
 
 
 <b><i>Technologies Used for FRONT-END</i></b></br>
