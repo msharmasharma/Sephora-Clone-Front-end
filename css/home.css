@@ -1,0 +1,785 @@
+*{
+  box-sizing: border-box;
+  
+}
+
+#rig,
+#rig1,
+#rig2,
+#rig3,
+#rig4,
+#rig5 {
+  width: 200px;
+  font-size: 14px;
+  height: 800px;
+  display: none;
+  transform: translateX(-110%);
+  transition: transform 1s ease-in-out;
+  overflow-y: scroll;
+}
+
+body{
+  position: relative;
+}
+
+#try,#skincare,#frag,#hair,#tools,#brands{
+  position: absolute;
+  background-color: white;
+}
+#frag,#skincare,#hair,#tools,#brands{
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+ color: black;
+}
+
+
+#log2{
+  height: 15px;
+ display:none;
+ margin-right: 10px;
+}
+
+
+
+#lef {
+  width: 220px;
+  height: 600px;
+}
+
+#rig div,
+#rig1 div,
+#rig2 div,
+#rig3 div,
+#rig4 div,
+#rig5 div {
+  margin-top: 10px;
+}
+
+#slight {
+  height: 800px;
+  padding-left: 10px;
+  transform: translateX(-110%);
+  transition: transform 1s ease-in-out;
+  display: flex;
+  background-color: aliceblue;
+  position: absolute;
+}
+
+.lev {
+  width: 210px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.lev div:hover {
+  cursor: pointer;
+}
+
+.chev {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+}
+
+#btn {
+  color: #1886bc;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-left: 1.5%;
+}
+
+body {
+  margin-top: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-left: 0;
+}
+
+#first {
+  width: 100%;
+  height: 50px;
+}
+
+#first div {
+  display: inline-block;
+
+  vertical-align: top;
+  margin-top: 5px;
+}
+
+#first div:hover {
+  cursor: pointer;
+}
+
+.sam {
+  width: 7%;
+  height: 40px;
+}
+
+#broad {
+  height: 40px;
+  width: 30%;
+}
+
+#google{
+  margin-top: 25px;
+}
+
+.star {
+  background-image: url(home.png);
+}
+
+.sam1 {
+  width: 100px;
+  height: 30px;
+}
+
+#get {
+  font-size: 18px;
+}
+
+#sec div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#handleBox{
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.sep {
+  width: 210px;
+  height: 45px;
+}
+
+.sep11 {
+  height: 30px;
+  width: 30px;
+ 
+}
+
+#marr{
+   margin-left: -80px;
+}
+
+#log {
+  width: 80px;
+  height: 30px;
+}
+
+.sep1 {
+  width: 280px;
+  height: 60px;
+}
+
+#seph {
+  font-size: 40px;
+}
+
+#search {
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid grey;
+  outline: none;
+  font-size: 15px;
+}
+
+#sec div:hover {
+  cursor: pointer;
+}
+
+
+#list div {
+  margin-left: 6%;
+
+  display: inline-block;
+  font-size: 17px;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+#list div:hover {
+  border: 1px solid gray;
+  cursor: pointer;
+  color: #ec008c;
+  padding: 5px;
+}
+
+#try {
+  width: 100%;
+  height: 400px;
+  display: none;
+}
+
+.makeIn {
+  display: inline-block;
+
+  height: 200px;
+  width: 14%;
+  margin-left: 4%;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.makeIn div:hover {
+  color: #ec008c;
+  cursor: pointer;
+}
+
+#skincare {
+  display: none;
+}
+
+.skinIN {
+  display: inline-block;
+
+  width: 19%;
+  height: 200px;
+  margin-left: 4%;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+.skinIN div:hover {
+  color: #ec008c;
+  cursor: pointer;
+}
+
+#hair {
+  font-size: 14px;
+  display: none;
+}
+
+.hairC div:hover{
+  color: #ec008c;
+  cursor: pointer;
+}
+
+
+.fragIn {
+  display: inline-block;
+
+  width: 20%;
+  height: 150px;
+  margin-left: 5%;
+  vertical-align: top;
+}
+
+.fragIn div:hover {
+  color: #ec008c;
+  cursor: pointer;
+}
+
+#mLef {
+  margin-left: 25%;
+}
+
+.hairC {
+  vertical-align: top;
+  display: inline-block;
+
+  height: 150px;
+  width: 20%;
+  margin-left: 5%;
+  font-size: 14px;
+}
+
+#tools {
+  display: none;
+}
+
+.tool {
+  display: inline-block;
+  vertical-align: top;
+  width: 15%;
+  height: 200px;
+  margin-left: 4%;
+  font-size: 14px;
+}
+
+#frag {
+  display: none;
+}
+
+.tool div:hover {
+  color: #ec008c;
+  cursor: pointer;
+}
+
+#brands {
+  display: none;
+}
+
+.brand {
+  display: inline-block;
+  width: 15%;
+  height: 300px;
+  margin-left: 4%;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.brand div:hover {
+  color: #ec008c;
+  cursor: pointer;
+}
+
+#changeImg {
+  width: 100%;
+  height: 520px;
+  background-size: cover;
+}
+
+#black div {
+  height: 80px;
+  display: inline-block;
+  width: 12%;
+  margin-left: 3%;
+}
+
+#black div:hover {
+  cursor: pointer;
+}
+
+#just {
+  width: 100%;
+  height: 100px;
+}
+
+#vi {
+  text-align: center;
+  font-weight: bold;
+}
+
+#vi:hover {
+  cursor: pointer;
+}
+
+#comb {
+  width: 100%;
+  height: 400px;
+}
+
+#left {
+  margin-left: 5px;
+}
+
+#left,
+#right {
+  display: inline-block;
+
+  width: 49%;
+  height: 100%;
+  vertical-align: top;
+}
+
+iframe {
+  width: 100%;
+  height: 1005;
+}
+
+.telOil {
+  display: inline-block;
+
+  width: 30%;
+  height: 100%;
+  margin-left: 2%;
+  vertical-align: top;
+}
+
+.telOil:hover {
+  cursor: pointer;
+}
+
+.botUp,
+.botDo {
+  width: 100%;
+  height: 54%;
+}
+
+.botDo {
+  width: 100%;
+  height: 43%;
+}
+
+.offImg {
+  width: 45%;
+
+  height: 10%;
+  margin: auto;
+  margin-top: 2%;
+}
+
+.off {
+  color: red;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.morOIL {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.trea {
+  text-align: center;
+  font-size: 13px;
+}
+
+.rupp {
+  font-size: 13px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.GetA {
+  font-size: 13px;
+  text-align: center;
+}
+
+#spOut {
+  width: 100%;
+  height: 400px;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#spOut div {
+  width: 32%;
+  height: 100%;
+}
+
+#spOut div:hover {
+  cursor: pointer;
+}
+
+#piroduct {
+  /* border: 1px solid red; */
+  /* width: 100%; */
+  
+  height: 420px;
+}
+
+
+#piroduct::-webkit-scrollbar {
+ 
+  height: 5px;                /* width of the entire scrollbar */
+}
+
+
+
+
+#piroduct::-webkit-scrollbar-track {
+  background: white; 
+       /* color of the tracking area */
+}
+
+#piroduct::-webkit-scrollbar:hover{
+  cursor: pointer;
+}
+
+#piroduct::-webkit-scrollbar-thumb {
+  background-color: gray;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+ border: none;  /* creates padding around scroll thumb */
+}
+
+
+
+#benefit {
+  display: flex;
+
+  width: 100%;
+  justify-content: space-between;
+}
+
+#benefit div {
+  width: 14%;
+  height: 80px;
+ 
+
+}
+
+
+#benefit div:hover {
+  cursor: pointer;
+}
+
+#ofLip {
+  display: flex;
+  justify-content: space-between;
+}
+
+#ofLip div {
+  width: 30%;
+  height: 250px;
+}
+#ofLip div:hover {
+  cursor: pointer;
+}
+
+#primer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#primer div {
+  width: 30%;
+  height: 470px;
+  margin-left: 1%;
+}
+#primer div:hover {
+  cursor: pointer;
+}
+.tops {
+  font-size: 23px;
+}
+#toTop {
+  text-align: center;
+  margin: auto;
+}
+#toTop button {
+  background-color: #abc72c;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 13px;
+  border: none;
+}
+#toTop button:hover {
+  cursor: pointer;
+}
+#subs {
+  display: flex;
+  justify-content: space-evenly;
+}
+#crib {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+#inSubs {
+  outline: none;
+  background: transparent;
+  font-size: 19px;
+  border: none;
+}
+.centu {
+  text-align: center;
+  font-size: 13px;
+  color: gray;
+}
+#werr {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 65%;
+}
+#werr div {
+  font-weight: 20px;
+  font-weight: bold;
+}
+#werr div:hover {
+  color: #ff4099;
+  cursor: pointer;
+}
+#socI {
+  margin: auto;
+  width: 28%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#socI div {
+  width: 25px;
+  height: 25px;
+}
+#socI div:hover {
+  cursor: pointer;
+  color: #ff4099;
+}
+
+#nnn {
+  margin: auto;
+  width: 35%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#nnn div {
+  font-size: 14px;
+}
+.hovPink:hover{
+  color: #ec008c;
+  cursor: pointer;
+}
+
+#logIn {
+  height: 500px;
+  width: 400px;
+  
+  position: absolute;
+  left: 36%;
+  top: 250px;
+  background-color: white;
+
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+}
+#regIn {
+  height: 500px;
+  width: 400px;
+  
+  position: absolute;
+  left: 36%;
+  top: 250px;
+  background-color: white;
+ 
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+}
+
+#regInDiv{
+ 
+  margin: auto;
+  width: 70%;
+  height: 90%;
+}
+.grText{
+  color: gray;
+  font-size: 13px;
+
+}
+#piroduct{
+ display: flex;
+ overflow-x: scroll;
+ 
+}
+
+#piroduct div{
+
+ 
+  width: 200px;
+  height: 100%;
+  /* border: 1px solid red; */
+
+}
+#regInDiv input{
+  border: 2px solid red;
+  width: 100%;
+  height: 30px;
+  outline: none;
+}
+.selfR{
+  background-color: #FF3399;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  height: 30px;
+  border: none;
+}
+.selfR:hover{
+  cursor: pointer;
+}
+
+#ciross{
+  color: #FF3399;
+  text-align: end;
+  font-weight: bolder;
+  font-size: 20px;
+  padding-right: 10px;
+}
+#ciross:hover{
+  cursor: pointer;
+}
+  
+
+.upText{
+  color: grey;
+  font-size: 12px;
+  text-align: center;
+}
+.logInP{
+  /* width: 70%;
+  border: 2px solid red;
+   margin: auto;
+   height: 40px; */
+   display: flex;
+   justify-content: space-around;
+}
+
+.logInP input{
+  border: 2px solid red;
+  width: 70%;
+  height: 30px;
+  outline: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+.contP{
+  margin: auto;
+  background-color: #FF3399;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  width: 70%;
+  height: 25px;
+  border: none;
+  
+
+}
+.contPP{
+
+  margin: auto;
+  /* background-color: #FF3399; */
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  width: 70%;
+  height: 10px;
+  border: none;
+
+
+}
+
+.contP:hover{
+  cursor: pointer;
+}
+#cros{
+  color: #FF3399;
+  text-align: end;
+  font-weight: bolder;
+  padding-right: 4px;
+  font-size: 25px;
+  
+} 
+#cros:hover{
+  cursor: pointer;
+}
+
+
+
+
+

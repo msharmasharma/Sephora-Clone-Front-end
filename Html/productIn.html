@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="icon" href="https://static.nnnow.com/client/assets/images/nnnow-logo-200.png">
+    <link rel="stylesheet" href="/css/product.css">
+    <title>Buy Mending Infusion</title>
+   
+</head>
+<body>
+
+    <div id = "main"></div>
+    <div id = "starT">
+        <span>SEPHORA / </span>
+        <span>MOROCCANOIL / </span>
+        <span>Women / </span>
+        <span>Beauty / </span>
+        <span id = "pinku">Hair Styling Products</span>
+    </div>
+    <br>
+    <div style="margin-left: 1%;">
+        <div id = "lest">
+
+            <div id = "aImgLe">
+<!-- ///Here -->
+                <div id = "aImgUp"></div>
+                <div id = "aImgDo"></div>
+
+            </div>
+            <div id = "aImgRi"></div>
+
+        </div>
+        <div id = "rigst">
+            <br>
+            <div id = "choori">
+                <div id = "chakku"><img src = "https://cdn02.nnnow.com/web-images/master/product_tags/cb6e9f96-922e-42cb-84ae-9337178f87fa/1554297283453/Sale.png" width="100%" height="100%"></div>
+                <div> OFFERS</div>
+            </div>
+            <br>
+
+            <!-- here -->
+            <div id = "naam"></div>
+            <br>
+            <div id = "des"></div>
+            <br>
+
+            <!-- here -->
+            <div id = "kemat"></div>
+            <br><br>
+
+            <div id = "freeIt">
+                <div id = "freeLe">OFFER :</div>
+                <div id = "freeRe">GET A MOROCCANOIL INTENSE HYDRATING MASK 30ML FREE ON PURCHASE OF RS. 4000 & ABOVEMOROCCANOIL
+                  <br>  <span id = "otherE">OTHER ELIGIBLE PRODUCTS</span></div>
+            </div>
+
+            <div style="font-weight: bold;">SIZE:</div>
+            <br>
+            <div id = "ML">MED</div>
+
+            <br>
+            <div id = "impOr">
+                
+              
+                <div style="display: flex;">
+                        <div style="border: 2px solid #F28216;border-radius: 50%;width: 30px; height: 30px;text-align: center;color: #F28216;font-weight: bolder; margin-left: 2%;font-size: 20px;">!</div>
+                        <div style="font-weight: bold;">IMPORTANT</div>
+
+                </div>
+                <div style="margin-left: 2%;font-weight: 5px;">All products that will be shipped will have a shelf-life more than 8 months to 3 years.</div>
+            </div>
+<br>
+            <span style="font-weight: bold;">COLOR:</span>
+            <span>No colour</span>
+            <br><br><br>
+            <div id = "addBag">ADD TO BAG</div>
+            <br>
+
+            <div style="margin: auto;width: 28%;height: 70px;"><img src = "/images/share.png" height="100%" width="100%"></div>
+
+            <br>
+            <div style="display: flex; margin-left: 5%;">
+                <div><img src="https://static.nnnow.com/client/assets/images/pdp/pdp_non_returnable_logo.png" height="40px" width="40px"></div>
+                <div><span style="font-weight: bold;">RETURN POLICY ON THIS ITEM</span><br><span>This item is non-returnable.</span></div>
+            </div>
+
+            <br><br>
+            <div style="width: 90%;height: 200px;">
+                <img src="https://static.nnnow.com/client/assets/images/pdp/pdp_desktop_1.jpg" height="100%" width="100%">
+            </div>
+
+        </div>
+    </div>
+    <br><br>
+    <div id = "niBack"></div>
+
+</body>
+</html>
+
+
+<script type="module">
+
+    import navbar from '/components/navbar.js';
+    import navImpl from '/JS/nav.js';
+    import lower from '/JS/lower.js';
+
+
+
+
+    
+
+
+
+    document.getElementById("main").innerHTML = navbar();
+    navImpl();
+
+
+    var detail = JSON.parse(localStorage.getItem("detail"));
+    document.getElementById("naam").innerText = `${detail.title}`;
+    document.getElementById("des").innerText = `${detail.des1}`;
+    document.getElementById("kemat").innerText = `Rs. ${detail.price}`;
+    document.getElementById("aImgRi").style.backgroundImage = `url(${detail.img1})`;
+    document.getElementById('aImgDo').style.backgroundImage = `url(${detail.img1})`;
+    document.getElementById('aImgUp').style.backgroundImage = `url(${detail.img2})`;
+
+
+
+    document.getElementById("niBack").innerHTML = lower();
+
+
+
+
+    var userName = JSON.parse(localStorage.getItem("userName"));
+  if(userName === null){ 
+
+  }else{ 
+    document.getElementById("handleBox").innerText = `Hi, ${userName}`;
+
+  }
+
+
+</script>
+
+<script>
+
+
+
+    var arr = JSON.parse(localStorage.getItem("data")) || [];
+
+    var count = 0;
+    var detail = JSON.parse(localStorage.getItem("detail"));
+
+
+    document.getElementById("addBag").addEventListener("click",()=>{
+        if(count == 0){
+            detail.quantity = 1;
+            console.log(detail)
+            arr.push(detail);
+            localStorage.setItem("data",JSON.stringify(arr));
+            alert("Item Added To Bag")
+            count++;
+        }else{
+            alert("Item Already Added");
+        }
+    })
+
+
+    
+
+    
+  
+</script>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="https://static.nnnow.com/client/assets/images/nnnow-logo-200.png">
+  <link rel="stylesheet" href="/css/bag.css">
+  <title>NNNOW.com Discover and Shop Latest fashion and Clothes Online </title>
+
+  <style>
+    /* body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+      .wide {
+        width: 100%;
+
+        font-weight: bold;
+        font-size: 20px;
+       
+      }
+
+      #ulta {
+        border: 1px solid red;
+        width: 64%;
+        display: inline-block;
+        vertical-align: top;
+       
+      }
+
+      #sidha {
+        border: 1px solid red;
+        width: 35%;
+        display: inline-block;
+        vertical-align: top;
+        height: 700px;
+      }
+      #promos {
+        display: flex;
+        border: 1px solid red;
+        margin: auto;
+        font-size: 18px;
+        width: 50%;
+      }
+      #promos div:hover {
+        color: #fe3398;
+        cursor: pointer;
+      }
+      #appCode {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+      }
+      #prInp {
+        border: 2px solid black;
+        padding: 5px;
+      }
+      #applyCo {
+        border: 2px solid black;
+      }
+      #bill {
+        border: 1px solid red;
+        width: 80%;
+        margin: auto;
+        height: 230px;
+      }
+      .bory {
+        font-weight: bold;
+        font-size: 15px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .spbw {
+        display: flex;
+        justify-content: space-between;
+        font-size: 13.5px;
+        margin-top: 8px;
+      }
+      #check_out {
+        margin-top: 10px;
+        font-size: 15px;
+        padding: 10px;
+        width: 80%;
+        font-weight: bold;
+        background-color: #fe3398;
+        color: white;
+        outline: none;
+        border: none;
+      }
+      #shop_more {
+        margin-top: 10px;
+        font-size: 15px;
+        padding: 10px;
+        width: 80%;
+        font-weight: bold;
+        border: 2px solid black;
+      }
+      .boxes {
+        display: flex;
+        height: 170px;
+        margin-top: 20px;
+      }
+     
+      .bThree {
+        text-align: end;
+        font-weight: bold;
+        width: 20%;
+        height: 100%;
+        border: 1px solid red;
+      }
+      .bOne {
+        display: flex;
+        width: 45%;
+        border: 4px solid black;
+        height: 100%;
+      }
+      .bTwo {
+        width: 30%;
+        border: 1px solid red;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+      .qty {
+        padding: 10px;
+        height: 40px;
+        outline: none;
+      }
+
+      .oneImg {
+        width: 40%;
+        height: 100%;
+        border: 1px solid green;
+        background-size: cover;
+      }
+      .oneText {
+        width: 60%;
+        border: 1px solid red;
+        height: 100%;
+        font-size: 15px;
+      }
+      .oneText div {
+        margin-top: 10px;
+      }
+      .desy {
+        font-weight: bold;
+      }
+
+      .but_Div {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 5px;
+      }
+      #move {
+        border: none;
+        border-bottom: 1px solid grey;
+        font-size: 13px;
+        outline: none;
+      }
+      #remove {
+        border: none;
+        border-bottom: 1px solid grey;
+        font-size: 13px;
+        outline: none;
+      }
+      #remove:hover,
+      #move:hover {
+        cursor: pointer;
+      } */
+    #check_out:hover {
+      cursor: pointer;
+    }
+
+    #shop_more:hover {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wide">S E P H O R A</div>
+  <div class="wide" style="background-color: #0092df; color: white">
+    <span>MY BAG</span><span id="nim"></span>
+  </div>
+  <br />
+  <div id="maiNN">
+    <div id="ulta"></div>
+    <div id="sidha">
+      <div id="promos">
+        <div>
+          <img src="https://static.nnnow.com/client/assets/images/promotions/icon_promo.png" width="25px"
+            height="25px" />
+        </div>
+        <div>APPLY PROMO CODE</div>
+      </div>
+      <br />
+
+      <div id="appCode">
+        <input type="text" placeholder="Enter Code" id="prInp" />
+        <button id="applyCo">APPLY</button>
+      </div>
+      <br />
+      <br />
+      <div id="bill">
+        <div class="bory">OVERVIEW</div>
+
+        <div class="spbw">
+          <div>Subtotal</div>
+          <div id="trotal1"></div>
+        </div>
+
+        <div class="spbw">
+          <div>Discount</div>
+          <div>-Rs.0</div>
+        </div>
+
+        <div class="spbw">
+          <div>GST</div>
+          <div>Rs.0</div>
+        </div>
+
+        <div class="spbw">
+          <div>Delivery Charges ❕</div>
+          <div>Rs.0</div>
+        </div>
+        <hr style="font-weight: bold" />
+        <br />
+        <div class="bory">
+          <div>Total</div>
+          <div id="trotal2"></div>
+        </div>
+      </div>
+      <br />
+      <div style="display: flex; justify-content: center">
+        <button id="check_out">CHECKOUT</button>
+      </div>
+      <br />
+      <div style="display: flex; justify-content: center">
+        <button id="shop_more">SHOP MORE</button>
+      </div>
+
+      <br />
+
+      <div style="margin: auto; width: 80%; height: 90px">
+        <img src="https://static.nnnow.com/mybag_offer_banner.jpg" width="100%" height="100%" />
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script>
+  var c;
+
+  var arr = [];
+  rep();
+  var total;
+  function rep() {
+    total = 0;
+    document.getElementById("ulta").innerHTML = null;
+
+    var data = JSON.parse(localStorage.getItem("data"));
+    data.forEach((x, index) => {
+
+
+      var box = document.createElement("div");
+      box.setAttribute("class", "boxes");
+
+      var costs = x.price;
+
+      var bOne = document.createElement("div");
+      var bTwo = document.createElement("div");
+      var bThree = document.createElement("div");
+
+      bThree.innerText = `Rs. ${costs}`;
+
+
+
+
+      // ---------------------------------------------------------------------
+      bThree.setAttribute("class", "bThree");
+
+
+      var qty = document.createElement("select");
+      qty.setAttribute("class", "qty");
+
+      var qtyOne = document.createElement("option");
+      qtyOne.innerText = 1;
+      qtyOne.value = 1;
+      var qtyTwo = document.createElement("option");
+      qtyTwo.innerText = 2;
+      qtyTwo.value = 2;
+      var qtyThree = document.createElement("option");
+      qtyThree.innerText = 3;
+      qtyThree.value = 3;
+      var qtyFour = document.createElement("option");
+      qtyFour.innerText = 4;
+      qtyFour.value = 4;
+
+
+      total = total + x.price * x.quantity;
+      arr.push(x.price);
+      showCost();
+
+      qty.addEventListener("change", () => {
+
+        x.quantity = qty.value;
+        bThree.innerText = `Rs. ${qty.value*x.price}`;
+       
+        arr[index] = x.price * qty.value;
+        showPrice()
+
+      })
+
+
+
+
+      bTwo.setAttribute("class", "bTwo");
+      var qaty = document.createElement("div");
+      qaty.innerText = `Qty :ㅤ`;
+      qty.append(qtyOne, qtyTwo, qtyThree, qtyFour);
+      bTwo.append(qaty, qty);
+
+      bOne.setAttribute("class", "bOne");
+      var oneImg = document.createElement("div");
+      oneImg.style.backgroundImage = `url(${x.img1})`;
+      oneImg.setAttribute("class", "oneImg");
+
+      var oneText = document.createElement("div");
+      oneText.setAttribute("class", "oneText");
+      var title = document.createElement("div");
+      title.innerText = `${x.title}`;
+      var desy = document.createElement("div");
+      desy.setAttribute("class", "desy");
+      desy.innerText = `${x.des1}`;
+      var size = document.createElement("div");
+      size.innerText = `Size - 330ML`;
+      var color = document.createElement("div");
+      color.innerText = `Color - No Color`;
+      var but_Div = document.createElement("div");
+      but_Div.setAttribute("class", "but_Div");
+      var move = document.createElement("button");
+      move.innerText = `Move to Favourites`;
+      move.setAttribute("id", "move");
+      var remove = document.createElement("button");
+      remove.addEventListener("click", () => {
+
+        rem(index)
+
+      })
+
+      function rem(y) {
+        data.splice(y, 1);
+        localStorage.setItem("data", JSON.stringify(data))
+        event.target.parentNode.remove();
+        arr = [];
+        rep();
+
+      }
+
+
+      remove.innerText = `Remove`;
+      remove.setAttribute("id", "remove");
+      but_Div.append(move, remove);
+
+      oneText.append(title, desy, color, size, but_Div);
+
+      bOne.append(oneImg, oneText);
+
+      box.append(bOne, bTwo, bThree);
+
+      document.getElementById("ulta").append(box);
+
+
+
+
+    
+    });
+    showPrice()
+    console.log(arr);
+  }
+
+  
+  function showPrice() {
+    c = 0;
+    for (var i = 0; i < arr.length; i++) {
+      c = c + arr[i];
+    }
+    document.getElementById("trotal2").innerText = `Rs. ${c}`
+    document.getElementById("trotal1").innerText = `Rs. ${c}`
+    var c = localStorage.setItem("c",JSON.stringify(c));
+    console.log(arr);
+
+
+  }
+
+
+  function showCost() {
+
+    document.getElementById("trotal1").innerText = `Rs. ${total}`;
+    document.getElementById("trotal2").innerText = `Rs. ${total}`;
+
+  }
+
+
+
+
+  document.getElementById("shop_more").addEventListener("click", () => {
+
+    window.location.href = "hairSpray.html";
+
+  })
+
+
+ 
+  document.getElementById("applyCo").addEventListener("click",()=>{
+
+if(document.getElementById("prInp").value == "masai30"){
+  var c = JSON.parse(localStorage.getItem("c"));
+
+  alert(`Congratulations you got 30% Discount 🎉🎉`);
+  c = c - (c*0.3);
+  document.getElementById("trotal2").innerText = `Rs. ${c}`;
+  localStorage.setItem("c",JSON.stringify(c));
+
+  document.getElementById("applyCo").style.display = "none";
+  document.getElementById("prInp").style.display = "none";
+
+
+}else{
+  alert("Invalid Code");
+}
+
+
+})
+
+document.getElementById("check_out").addEventListener("click",()=>{
+
+  var userToken = JSON.parse(localStorage.getItem("userToken"));
+  
+  fetch(`https://sephorabackend.herokuapp.com/hairSpray/auth`,{
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${userToken}`,
+      },
+    }).then(function (res) {
+      console.log(userToken)
+      res.json().then(function (res) {
+        console.log(res);
+        if (res.status !== "fine") {
+          alert(`Please Login to proceed further`);
+        }
+        
+        else {
+          var data = JSON.parse(localStorage.getItem("data"));
+          if(data.length !== 0){ 
+            window.location.href = "checkout1.html";
+          } else{
+            
+          }
+          // alert("Wrong Credentials");
+        }
+      });
+    });
+
+
+
+})
+
+
+
+
+</script>

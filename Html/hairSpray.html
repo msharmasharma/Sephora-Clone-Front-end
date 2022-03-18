@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/home.css" />
+  <link rel="stylesheet" href="/css/hairSpray.css" />
+  <link rel="icon" href="https://static.nnnow.com/client/assets/images/nnnow-logo-200.png">
+  <title>Buy Hair Sprays and Styling Products Online in India</title>
+</head>
+
+<body>
+  <div id="main"></div>
+
+  <div>
+    <span class="curs" style="margin-left: 2%"><a href="home.html">SEPHORA </a>/</span>
+    <span class="curs"> Haircare /</span>
+    <span class="curs" style="color: #ec008c">
+      Hair Sprays and Styling Products</span>
+  </div>
+  <br />
+  <div id="out_Div">
+    <div class="in_Div" id="leff">
+      <div class="leffHe">CATEGORY</div>
+      <br />
+      <div>
+        <span><input type="checkbox" /></span>
+        <span class="chsi">Hair Styling Products (26)</span>
+      </div>
+      <br />
+
+      <div>
+        <span><input type="checkbox" /></span>
+        <span class="chsi">Hair Styling Products (2)</span>
+      </div>
+      <hr />
+
+      <br />
+      <div>
+        <span><input type="checkbox" /></span>
+        <span class="chsi">New Arrivals(15)</span>
+      </div>
+
+      <br />
+
+      <div>
+        <span><input type="checkbox" /></span>
+        <span class="chsi">On Sale(24)</span>
+      </div>
+
+      <hr />
+      <br />
+      <div class="leffHe">FILTER BY</div>
+
+      <div id="divInpi">
+        <div>Brand</div>
+        <div>➺</div>
+      </div>
+      <div id="bran_Sort">
+        <div>
+          <span><input type="checkbox" id="moroccanoil"
+            /></span>
+          <span>Morrocannoil(14)</span><br />
+        </div>
+
+        <div>
+          <span><input type="checkbox"  id="dyson"
+            /></span>
+          <span>Dyson(5)</span><br />
+        </div>
+
+        <div>
+          <span><input type="checkbox" id="aveda"
+            /></span>
+          <span>Aveda(4)</span><br />
+        </div>
+
+        <div>
+          <span><input type="checkbox" id="kamaAyurveda"
+            /></span>
+          <span>Kama Ayurveda(3)</span><br />
+        </div>
+
+        <div>
+          <span><input type="checkbox"  id="briogeo"
+            /></span>
+          <span>Briogeo(1)</span><br />
+        </div>
+      </div>
+
+      <br />
+
+      <div id="sizeInpi">
+        <div>Size</div>
+        <div>➺</div>
+      </div>
+      <div id="size_Sort">
+        <div>
+          <span><input type="checkbox" /></span>
+          <span>100 ML(2)</span><br />
+        </div>
+
+        <div>
+          <span><input type="checkbox" /></span>
+          <span>100 Gm(2)</span><br />
+        </div>
+
+        <div>
+          <span><input type="checkbox" /></span>
+          <span>125 ML(1)</span><br />
+        </div>
+
+        <div>
+          <span><input type="checkbox" /></span>
+          <span>147 ML(1)</span><br />
+        </div>
+
+        <div>
+          <span><input type="checkbox" /></span>
+          <span>150 ML(1)</span><br />
+        </div>
+      </div>
+
+      <br />
+
+      <div id="colorInpi">
+        <div>Color</div>
+        <div>➺</div>
+      </div>
+      <div id="color_Sort">
+        <div>
+          <span><input type="checkbox" /></span>
+          <span>No Colour(26)</span><br />
+        </div>
+
+        <div>
+          <span><input type="checkbox" /></span>
+          <span>Blue(1)</span><br />
+        </div>
+
+        <div>
+          <span><input type="checkbox" /></span>
+          <span> Green(1)</span>
+          <br />
+        </div>
+      </div>
+      <br />
+
+      <div id="priceInpi">
+        <div>Price</div>
+        <div>➺</div>
+      </div>
+      <div id="price_Sort">
+        <div>
+          <span><input type="checkbox"  id="b1499"
+            /></span>
+          <span>Below Rs.1499(6)</span><br />
+        </div>
+
+        <div>
+          <span><input type="checkbox" id="a1500"
+            ></span>
+          <span>Rs.1500 - Rs.1999(2)</span><br />
+        </div>
+
+        <div>
+          <span><input type="checkbox" id="a2000"
+            /></span>
+          <span> Rs.2000 - Rs.2499(10)</span>
+          <br />
+        </div>
+
+        <div>
+          <span><input type="checkbox" id="a2500"
+            /></span>
+          <span> Above Rs.2500(11)</span>
+          <br />
+        </div>
+      </div>
+    </div>
+
+    <div class="in_Div" id="reff">
+      <div id="flEnd">
+        <span class="bol">SORT:ㅤ </span><span><select id="opti" onchange="sorybyprice()">
+            <option value="pop">Popularity</option>
+            <option value="Low">Price:Low To High</option>
+            <option value="High">Price:High To Low</option>
+            <option value="">Discount</option>
+          </select></span>
+      </div>
+      <br />
+      <div id="Items_Div"></div>
+      <br />
+    </div>
+  </div>
+  </div>
+
+  <br>
+
+  <div id="lowrr"></div>
+</body>
+
+</html>
+
+<script>
+
+
+  
+
+
+
+// <!-- /////////////////////////////////////////////////////////////// -->
+
+
+
+
+document.getElementById("b1499").addEventListener("change",hlosort);
+
+var sorted = false;
+function hlosort(){ 
+
+  if(sorted === false){
+    sortByPrices();
+    sorted = true;
+
+  }
+  else{
+    ByPrices();
+    sorted = false;
+  }
+}
+
+
+
+
+
+  async  function sortByPrices(){ 
+    try {
+      let res = await fetch(`https://sephorabackend.herokuapp.com/hairSpray/below1499`);
+      console.log("data");
+
+      let data = await res.json();
+      console.log(data);
+      showData(data);
+      
+    } catch (err) {
+      console.log("type error check again", err);
+    }
+  }
+
+
+  async  function ByPrices(){ 
+    try {
+      let res = await fetch(`https://sephorabackend.herokuapp.com/hairSpray`);
+      console.log("data");
+
+      let data = await res.json();
+      console.log(data);
+      showData(data);
+      
+    } catch (err) {
+      console.log("type error check again", err);
+    }
+  }
+
+
+document.getElementById("a1500").addEventListener("change",hlosort1);
+
+var sorted1 = false;
+function hlosort1(){ 
+
+  if(sorted1 === false){
+    sortByPrices1();
+    sorted1 = true;
+
+  }
+  else{
+    ByPrices();
+    sorted1 = false;
+  }
+}
+
+  async  function sortByPrices1(){ 
+    try {
+      let res = await fetch(`https://sephorabackend.herokuapp.com/hairSpray/1500to1999`);
+
+      let data = await res.json();
+      console.log(data);
+      showData(data);
+      
+    } catch (err) {
+      console.log("type error check again", err);
+    }
+  }
+
+  document.getElementById("a2000").addEventListener("change",hlosort2);
+
+var sorted2 = false;
+function hlosort2(){ 
+
+  if(sorted2 === false){
+    sortByPrices2();
+    sorted2 = true;
+
+  }
+  else{
+    ByPrices();
+    sorted2 = false;
+  }
+}
+
+  async  function sortByPrices2(){ 
+    try {
+      let res = await fetch(`https://sephorabackend.herokuapp.com/hairSpray/2000to2499`);
+
+      let data = await res.json();
+      console.log(data);
+      showData(data);
+      
+    } catch (err) {
+      console.log("type error check again", err);
+    }
+  }
+
+  document.getElementById("a2500").addEventListener("change",hlosort3);
+
+var sorted3 = false;
+function hlosort3(){ 
+
+  if(sorted3 === false){
+    sortByPrices3();
+    sorted3 = true;
+
+  }
+  else{
+    ByPrices();
+    sorted3 = false;
+  }
+}
+  async  function sortByPrices3(){ 
+    try {
+      let res = await fetch(`https://sephorabackend.herokuapp.com/hairSpray/above2500`);
+
+      let data = await res.json();
+      console.log(data);
+      showData(data);
+      
+    } catch (err) {
+      console.log("type error check again", err);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+  document.getElementById("aveda").addEventListener("change",brandsort);
+
+var bsort2 = false;
+function brandsort(){
+
+  if(bsort2 === false){
+    sortByBrandAveda();
+    bsort2 = true;
+
+  }
+  else{
+    ByPrices();
+    bsort2 = false;
+  }
+}
+
+  async  function sortByBrandAveda(){ 
+    console.log("aveda")
+    try {
+      let res = await fetch(`https://sephorabackend.herokuapp.com/hairSpray/aveda`);
+
+      let data = await res.json();
+
+      console.log(data);
+      showData(data);
+      
+    } catch (err) {
+      console.log("type error check again", err);
+    }
+  }
+
+document.getElementById("moroccanoil").addEventListener("change",brandsort1);
+
+var bsort2 = false;
+function brandsort1(){
+
+  if(bsort2 === false){
+    sortByBrandMOROCCANOIL();
+    bsort2 = true;
+
+  }
+  else{
+    ByPrices();
+    bsort2 = false;
+  }
+}
+
+  async  function sortByBrandMOROCCANOIL(){ 
+    try {
+      let res = await fetch(`https://sephorabackend.herokuapp.com/hairSpray/moroccanoil`);
+
+      let data = await res.json();
+
+      console.log(data);
+      showData(data);
+      
+    } catch (err) {
+      console.log("type error check again", err);
+    }
+  }
+
+document.getElementById("dyson").addEventListener("change",brandsort2);
+
+var bsort3 = false;
+function brandsort2(){
+
+  if(bsort3 === false){
+    sortByBrandDYSON();
+    bsort3 = true;
+
+  }
+  else{
+    ByPrices();
+    bsort3 = false;
+  }
+}
+
+  async  function sortByBrandDYSON(){ 
+
+    try {
+      let res = await fetch(`https://sephorabackend.herokuapp.com/hairSpray/dyson`);
+
+      let data = await res.json();
+
+      console.log(data);
+      showData(data);
+      
+    } catch (err) {
+      console.log("type error check again", err);
+    }
+  }
+
+document.getElementById("kamaAyurveda").addEventListener("change",brandsort3);
+
+var bsort4 = false;
+function brandsort3(){
+
+  if(bsort4 === false){
+    sortByBrandkamaAyurveda();
+    bsort4 = true;
+
+  }
+  else{
+    ByPrices();
+    bsort4 = false;
+  }
+}
+
+  async  function sortByBrandkamaAyurveda(){ 
+    
+    try {
+      let res = await fetch(`https://sephorabackend.herokuapp.com/hairSpray/kamaAyurveda`);
+
+      let data = await res.json();
+
+      console.log(data);
+      showData(data);
+      
+    } catch (err) {
+      console.log("type error check again", err);
+    }
+  }
+
+  //briogeo
+
+  document.getElementById("briogeo").addEventListener("change",brandsort4);
+
+var bsort5 = false;
+function brandsort4(){
+
+  if(bsort5 === false){
+    sortByBrandBRIOGEO();
+    bsort5 = true;
+
+  }
+  else{
+    ByPrices();
+    bsort5 = false;
+  }
+}
+
+  async  function sortByBrandBRIOGEO(){ 
+    
+    try {
+      let res = await fetch(`https://sephorabackend.herokuapp.com/hairSpray/briogeo`);
+
+      let data = await res.json();
+
+      console.log(data);
+      showData(data);
+      
+    } catch (err) {
+      console.log("type error check again", err);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <!-- /////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+  document.getElementById("opti").addEventListener("change",sorybyprice);
+
+  function sorybyprice() {
+    console.log("hi")
+    var select = document.getElementById("opti").value;
+
+    if (select == "Low") {
+
+      gettUsers();
+      async function gettUsers() {
+    try {
+      let res = await fetch(`https://sephorabackend.herokuapp.com/hairSpray/ascend`);
+
+      let data = await res.json();
+      console.log(data);
+      showData(data);
+      
+    } catch (err) {
+      console.log("type error check again", err);
+    }
+  }
+
+      showData(data2);
+    }
+    if (select == "High") {
+
+
+    gettUsers();
+      async function gettUsers() {
+    try {
+      let res = await fetch(`https://sephorabackend.herokuapp.com/hairSpray/descend`);
+
+      let data = await res.json();
+      console.log(data);
+      showData(data);
+      
+    } catch (err) {
+      console.log("type error check again", err);
+    }
+  }
+
+      showData(data2);
+
+
+    }
+
+
+
+
+
+
+
+    
+    if (select == "pop") {
+
+      gettUsers();
+      async function gettUsers() {
+    try {
+      let res = await fetch(`https://sephorabackend.herokuapp.com/hairSpray`);
+
+      let data = await res.json();
+      console.log(data);
+      showData(data);
+      
+    } catch (err) {
+      console.log("type error check again", err);
+    }
+  }
+
+      showData(data2);
+
+
+    }
+
+
+    // showData(data);
+  }
+
+
+
+    
+
+
+  let url = "https://sephorabackend.herokuapp.com/hairSpray";
+  
+  
+  async function getUsers() {
+    try {
+      let res = await fetch(url);
+      
+      let data = await res.json();
+      console.log(data);
+      showData(data);
+      
+    } catch (err) {
+      console.log("type error check again", err);
+    }
+  }
+  
+
+  getUsers();
+
+   
+ 
+
+
+  // showData(data);
+  function showData(data) {
+    document.getElementById("Items_Div").innerHTML = null;
+
+
+    data.forEach((el) => {
+      var span1 = document.createElement("span");
+      var span2 = document.createElement("span");
+
+      var spImg = document.createElement("img");
+      spImg.src = `https://cdn02.nnnow.com/web-images/master/product_tags/cb6e9f96-922e-42cb-84ae-9337178f87fa/1554297283453/Sale.png`;
+
+      span1.append(spImg);
+      span2.innerText = " OFFERS";
+      span1.setAttribute("class", "span1");
+
+      var offerss = document.createElement("div");
+      offerss.setAttribute("class", "offing");
+      offerss.append(span1, span2);
+
+      var title = document.createElement("div");
+      title.innerText = el.title;
+      title.setAttribute("class", "titles");
+
+      var price = document.createElement("div");
+      price.innerText = `Rs.${el.price}`;
+      price.setAttribute("class", "prices");
+
+      var image = document.createElement("img");
+      image.src = `${el.img1}`;
+
+      var des1 = document.createElement("div");
+      des1.innerText = `${el.des1}`;
+      des1.setAttribute("class", "des1");
+
+      var des2 = document.createElement("div");
+      des2.innerText = `${el.des2}`;
+      des2.setAttribute("class", "des2");
+
+      var box = document.createElement("div");
+      box.setAttribute("class", "box");
+
+      box.append(image, offerss, title, des1, price, des2);
+      document.getElementById("Items_Div").append(box);
+
+      var fl = false;
+      image.addEventListener("mouseenter",()=>{
+
+        image.src = `${el.img2}`;
+        image.addEventListener("mouseleave",()=>{
+          image.src = `${el.img1}`;
+
+        })
+
+      })
+
+
+
+      box.addEventListener("click", () => {
+
+        localStorage.setItem("detail", JSON.stringify(el));
+        window.location.href = "productIn.html";
+
+      })
+
+
+
+
+    });
+
+  }
+
+
+</script>
+
+
+<script type="module">
+  var details;
+
+
+
+
+  import navbar from "/components/navbar.js";
+
+  import navImpl from "/JS/nav.js";
+  import lower from "/JS/lower.js";
+
+  document.getElementById("main").innerHTML = navbar();
+  navImpl();
+
+
+
+
+
+
+
+  var flage = false;
+  document.getElementById("divInpi").addEventListener("click", () => {
+    if (flage == false) {
+      flage = true;
+    } else {
+      flage = false;
+    }
+
+    if (flage == true) {
+      document.getElementById("divInpi").style.color = "white";
+      document.getElementById("divInpi").style.backgroundColor = "black";
+
+      document.getElementById("bran_Sort").style.display = "block";
+    } else {
+      document.getElementById("bran_Sort").style.display = "none";
+
+      document.getElementById("divInpi").style.color = "black";
+      document.getElementById("divInpi").style.backgroundColor = "white";
+    }
+  });
+
+  document.getElementById("sizeInpi").addEventListener("click", () => {
+    if (flage == false) {
+      flage = true;
+    } else {
+      flage = false;
+    }
+
+    if (flage == true) {
+      document.getElementById("sizeInpi").style.color = "white";
+      document.getElementById("sizeInpi").style.backgroundColor = "black";
+
+      document.getElementById("size_Sort").style.display = "block";
+    } else {
+      document.getElementById("size_Sort").style.display = "none";
+
+      document.getElementById("sizeInpi").style.color = "black";
+      document.getElementById("sizeInpi").style.backgroundColor = "white";
+    }
+  });
+
+  document.getElementById("colorInpi").addEventListener("click", () => {
+    if (flage == false) {
+      flage = true;
+    } else {
+      flage = false;
+    }
+
+    if (flage == true) {
+      document.getElementById("colorInpi").style.color = "white";
+      document.getElementById("colorInpi").style.backgroundColor = "black";
+
+      document.getElementById("color_Sort").style.display = "block";
+    } else {
+      document.getElementById("colorInpi").style.color = "black";
+      document.getElementById("colorInpi").style.backgroundColor = "white";
+
+      document.getElementById("color_Sort").style.display = "none";
+    }
+  });
+
+  document.getElementById("priceInpi").addEventListener("click", () => {
+    if (flage == false) {
+      flage = true;
+    } else {
+      flage = false;
+    }
+
+    if (flage == true) {
+      document.getElementById("priceInpi").style.color = "white";
+      document.getElementById("priceInpi").style.backgroundColor = "black";
+
+      document.getElementById("price_Sort").style.display = "block";
+    } else {
+      document.getElementById("priceInpi").style.color = "black";
+      document.getElementById("priceInpi").style.backgroundColor = "white";
+
+      document.getElementById("price_Sort").style.display = "none";
+    }
+  });
+
+  document.getElementById("lowrr").innerHTML = lower();
+
+
+
+
+
+  var userName = JSON.parse(localStorage.getItem("userName"));
+  if(userName === null){ 
+
+  }else{ 
+    document.getElementById("handleBox").innerText = `Hi, ${userName}`;
+
+  }
+  
+
+
+
+  
+
+
+
+
+
+</script>
