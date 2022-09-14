@@ -87,8 +87,10 @@ The registration process for new users will be completed here, and we have done 
 <b><i>Website flow</i></b></br>
   *Visit Landing page</br> 
   *Visit Register/login page</br>
-  *Visit products page </br>
-  *Can sort products according to price and brands</br>
+  *Visit Haircare option </br>
+  *Visit Hairspray and styling products page </br>
+   *Can sort products according to popularity and price high to low and low to high</br>
+  *Can filter products according to price and brands</br>
   *Can add products to cart</br>
   *Can remove products from cart </br>
   *Can Checkout</br>
