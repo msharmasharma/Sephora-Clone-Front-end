@@ -379,7 +379,7 @@ function navImpl(){
       },
     }).then(function (res) {
       res.json().then(function (res) {
-        console.log(res);
+        // console.log(res);
         if (res.status == "Done") {
           alert(`Login Succesful ${res.user.name}`);
           document.getElementById("logIn").style.display = "none";
