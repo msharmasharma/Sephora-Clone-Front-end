@@ -44,7 +44,7 @@ The registration process for new users will be completed here, and we have done 
 
 <b><i>How to look up</i></b></br>
   Go to this link :-
-  https://clever-banach-bb22fa.netlify.app/
+  https://clone-sephora.netlify.app/
   <hr>
 
 
