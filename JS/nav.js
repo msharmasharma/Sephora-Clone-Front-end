@@ -312,7 +312,7 @@ function navImpl(){
     };
 
     data = JSON.stringify(data);
-    let url = `http://localhost:2354/register`
+    let url = `http://127.0.0.1:5502/register`
     console.log(data);
     let response = await fetch(url, {
       method: "POST",
@@ -369,8 +369,9 @@ function navImpl(){
       password: document.getElementById("yrPassword").value,
     };
     data = JSON.stringify(data);
+    
 
-    fetch(`http://localhost:2354/login`, {
+    fetch(`http://127.0.0.1:5502/login`, {
       method: "POST",
       body: data,
       headers: {
